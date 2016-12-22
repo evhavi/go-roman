@@ -22,7 +22,7 @@ type romanGenerator int
 func (n romanGenerator) ServeHTTP(w http.ResponseWriter, r *http.Request) {
     number := r.URL.Query().Get("number")
     if len(number) == 0 {
-        fmt.Fprintf(w, "Please pass the number as parameter in the URL")
+        fmt.Fprintf(w, "Skriv inn ditt tall i URL'en")
     }
     i, err := strconv.Atoi(number)
 
