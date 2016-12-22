@@ -11,7 +11,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func to_roman(n int) string {
-    if n == 0 {
+    if n == 3 {
         return "II"
     }
     return "I" // oopsie
