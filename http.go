@@ -27,7 +27,7 @@ func (n romanGenerator) ServeHTTP(w http.ResponseWriter, r *http.Request) {
     i, err := strconv.Atoi(number)
 
     if err == nil {
-        fmt.Fprintf(w, "Here's your number: %s\n", to_roman(i))
+        fmt.Fprintf(w, "Her er ditt lykketall: %s\n", to_roman(i))
     }
 }
 
